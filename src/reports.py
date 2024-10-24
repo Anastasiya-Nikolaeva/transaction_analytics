@@ -90,25 +90,3 @@ def expenses_by_workday(df, category, date):
     }
 
     return json.dumps(result)
-
-
-# if __name__ == "__main__":
-#     file_path = "../data/operations.xlsx"
-#     df = load_data(file_path)
-#
-#     if df is not None:
-#         # Преобразуем столбец 'Дата операции' в datetime
-#         df["Дата операции"] = pd.to_datetime(
-#             df["Дата операции"], format="%d.%m.%Y %H:%M:%S"
-#         )
-#
-#         # Пример вызова функций
-#         category_expenses = expenses_by_category(df, "Супермаркеты", datetime.now())
-#         weekday_expenses = expenses_by_weekday(df)
-#         workday_weekend_expenses = expenses_by_workday(
-#             df, "Супермаркеты", datetime.now()
-#         )
-#
-#         print("Траты по категории:", category_expenses)
-#         print("Траты по дням недели:", weekday_expenses)
-#         print("Траты в рабочий/выходной день:", workday_weekend_expenses)
