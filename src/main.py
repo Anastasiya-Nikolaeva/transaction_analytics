@@ -5,8 +5,12 @@ from pprint import pprint
 
 import pandas as pd
 
-from src.reports import (expenses_by_category, expenses_by_weekday,
-                         expenses_by_workday, load_data)
+from src.reports import (
+    expenses_by_category,
+    expenses_by_weekday,
+    expenses_by_workday,
+    load_data,
+)
 from src.services import get_personal_transfers
 from src.views import get_main
 

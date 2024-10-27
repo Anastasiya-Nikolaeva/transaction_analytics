@@ -5,8 +5,12 @@ from datetime import datetime
 
 import pandas as pd
 
-from src.reports import (expenses_by_category, expenses_by_weekday,
-                         expenses_by_workday, load_data)
+from src.reports import (
+    expenses_by_category,
+    expenses_by_weekday,
+    expenses_by_workday,
+    load_data,
+)
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../src")))
 
